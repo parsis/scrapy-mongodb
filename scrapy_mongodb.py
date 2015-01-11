@@ -275,7 +275,7 @@ class MongoDBPipeline(BaseItemExporter):
             self.collection.update(key, item, upsert=True)
 
             log.msg(
-                'Stored item(s) in MongoDB {0}/{1}'.format(
+                'Updated item(s) in MongoDB {0}/{1}'.format(
                     self.config['database'], self.config['collection']),
                 level=log.DEBUG,
                 spider=spider)
